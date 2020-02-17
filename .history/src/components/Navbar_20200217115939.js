@@ -62,29 +62,29 @@ const Navbar = class extends React.Component {
                     </div>
                     <div
                         id="navMenu"
-                        className={`font-bold w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:ml-auto`}
+                        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
                     >
                         <div className="lg:flex-grow">
                             <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
+                                className="block mt-4 lg:inline-block lg:mt-0 mr-4"
                                 to="/about"
                             >
                                 About
                             </Link>
                             <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
+                                className="block mt-4 lg:inline-block lg:mt-0 mr-4"
                                 to="/products"
                             >
                                 Products
                             </Link>
                             <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
+                                className="block mt-4 lg:inline-block lg:mt-0 mr-4"
                                 to="/blog"
                             >
                                 Blog
                             </Link>
                             <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
+                                className="block mt-4 lg:inline-block lg:mt-0 mr-4"
                                 to="/contact"
                             >
                                 Contact

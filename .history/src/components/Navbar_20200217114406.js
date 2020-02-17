@@ -39,54 +39,40 @@ const Navbar = class extends React.Component {
                 aria-label="main-navigation"
             >
                 <div className="container flex items-center justify-between flex-wrap p-6">
-                    <div className="flex items-center flex-shrink-0 mr-10">
+                    <div className="flex items-center flex-shrink-0 text-white mr-6">
                         <Link to="/" className="navbar-item" title="Logo">
                             <img
                                 src={logo}
                                 alt="Perth White Pointers"
-                                style={{ width: '200px' }}
+                                style={{ width: '170px' }}
                             />
                         </Link>
-                    </div>
-                    <div class="block lg:hidden">
-                        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                            <svg
-                                class="fill-current h-3 w-3"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title>Menu</title>
-                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                            </svg>
-                        </button>
+                        {/* Hamburger menu */}
+                        <div
+                            className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+                            data-target="navMenu"
+                            onClick={() => this.toggleHamburger()}
+                        >
+                            <span />
+                            <span />
+                            <span />
+                        </div>
                     </div>
                     <div
                         id="navMenu"
-                        className={`font-bold w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:ml-auto`}
+                        className={`navbar-menu ${this.state.navBarActiveClass}`}
                     >
-                        <div className="lg:flex-grow">
-                            <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
-                                to="/about"
-                            >
+                        <div className="navbar-start has-text-centered">
+                            <Link className="navbar-item" to="/about">
                                 About
                             </Link>
-                            <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
-                                to="/products"
-                            >
+                            <Link className="navbar-item" to="/products">
                                 Products
                             </Link>
-                            <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
-                                to="/blog"
-                            >
+                            <Link className="navbar-item" to="/blog">
                                 Blog
                             </Link>
-                            <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
-                                to="/contact"
-                            >
+                            <Link className="navbar-item" to="/contact">
                                 Contact
                             </Link>
                         </div>

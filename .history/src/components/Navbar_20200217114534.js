@@ -39,12 +39,12 @@ const Navbar = class extends React.Component {
                 aria-label="main-navigation"
             >
                 <div className="container flex items-center justify-between flex-wrap p-6">
-                    <div className="flex items-center flex-shrink-0 mr-10">
+                    <div className="flex items-center flex-shrink-0 mr-6">
                         <Link to="/" className="navbar-item" title="Logo">
                             <img
                                 src={logo}
                                 alt="Perth White Pointers"
-                                style={{ width: '200px' }}
+                                style={{ width: '170px' }}
                             />
                         </Link>
                     </div>
@@ -62,31 +62,19 @@ const Navbar = class extends React.Component {
                     </div>
                     <div
                         id="navMenu"
-                        className={`font-bold w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:ml-auto`}
+                        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
                     >
-                        <div className="lg:flex-grow">
-                            <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
-                                to="/about"
-                            >
+                        <div className="navbar-start has-text-centered">
+                            <Link className="navbar-item" to="/about">
                                 About
                             </Link>
-                            <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
-                                to="/products"
-                            >
+                            <Link className="navbar-item" to="/products">
                                 Products
                             </Link>
-                            <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
-                                to="/blog"
-                            >
+                            <Link className="navbar-item" to="/blog">
                                 Blog
                             </Link>
-                            <Link
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-6"
-                                to="/contact"
-                            >
+                            <Link className="navbar-item" to="/contact">
                                 Contact
                             </Link>
                         </div>

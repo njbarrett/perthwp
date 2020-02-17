@@ -62,7 +62,7 @@ const Navbar = class extends React.Component {
                     </div>
                     <div
                         id="navMenu"
-                        className={`font-bold w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:ml-auto`}
+                        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
                     >
                         <div className="lg:flex-grow">
                             <Link
