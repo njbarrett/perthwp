@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Perth's Premier LGBTIQ+ inclusive water polo team
 image: /img/banner-bg02.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: .
+subheading: SAY HELLO TO THE PERTH WHITE POINTERS
 mainpitch:
   title: Why Kaldi
   description: >
