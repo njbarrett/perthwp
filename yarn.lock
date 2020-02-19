@@ -5292,6 +5292,13 @@ gatsby-source-filesystem@^2.0.26:
     valid-url "^1.0.9"
     xstate "^4.7.2"
 
+gatsby-source-instagram@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-instagram/-/gatsby-source-instagram-0.6.1.tgz#8ed2548411217c8de790c94c188ce29d529c5ae2"
+  dependencies:
+    axios "^0.19.0"
+    cheerio "^1.0.0-rc.3"
+
 gatsby-telemetry@^1.1.49:
   version "1.1.49"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.1.49.tgz#f577738fe03a4aeef4bb5b481969e91fd52ca22d"
@@ -11923,6 +11930,12 @@ table@^5.2.3:
     lodash "^4.17.14"
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
+
+tailwindcss-typography@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-typography/-/tailwindcss-typography-3.0.1.tgz#7c74c46bf80841782024ee854cbf8e4e5cb57b1c"
+  dependencies:
+    lodash "^4.17.15"
 
 tailwindcss@^1.2.0:
   version "1.2.0"

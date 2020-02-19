@@ -1,8 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: 'Gatsby + Netlify CMS Starter',
+        title: 'Perth White Pointers | LGBTIQ+ Water Polo Club WA',
         description:
-            'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.'
+            "The Perth White Pointers are Western Australia's first LGBTIQ+ inclusive water polo team."
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -35,6 +35,12 @@ module.exports = {
             options: {
                 path: `${__dirname}/src/img`,
                 name: 'images'
+            }
+        },
+        {
+            resolve: `gatsby-source-instagram`,
+            options: {
+                username: `perth.whitepointers`
             }
         },
         'gatsby-plugin-sharp',
